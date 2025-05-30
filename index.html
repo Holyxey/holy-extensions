@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holy Extensions Demo</title>
+  </head>
+  <body>
+    <h1>Holy Extensions Demo</h1>
+    <p>This page demonstrates the Holy Extensions library components.</p>
+
+    <script type="module">
+      import { holyxeyModal } from '/src/cookiesModal/CookiesModal.ts'
+
+      // Настройка и запуск модального окна
+      try {
+        holyxeyModal.set({
+          fontFamily: 'Geometria',
+        })
+      } catch (e) {
+        console.error('Error setting modal:', e)
+      }
+    </script>
+  </body>
+</html>

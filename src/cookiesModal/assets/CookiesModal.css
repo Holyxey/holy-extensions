@@ -1,0 +1,35 @@
+:root {
+  --ease-cubic: cubic-bezier(0.1, 1.25, 0.8, 1);
+}
+
+.showFromBottom {
+  animation: showFromBottom 1s 1s var(--ease-cubic) forwards;
+}
+.hideToBottom {
+  animation: hideToBottom 0.3s var(--ease-cubic) forwards;
+}
+
+@keyframes showFromBottom {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hideToBottom {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(50%);
+    opacity: 0;
+    pointer-events: none;
+  }
+}

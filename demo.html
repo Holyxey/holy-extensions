@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holy Extensions Demo</title>
+    <!-- Подключаем Vue -->
+    <!-- Подключаем наш модуль локально -->
+    <link rel="stylesheet" href="dist/assets/holy-extensions.css" />
+  </head>
+  <body>
+    <h1>Holy Extensions Demo</h1>
+    <p>This page demonstrates the Holy Extensions library components.</p>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="dist/holy-extensions.min.js"></script>
+    <script>
+      // Настройка модального окна
+      window.holyxeyModal.set({
+        title: 'Тестовое сообщение',
+        description: 'Это тестовое уведомление о cookies',
+      })
+    </script>
+  </body>
+</html>
