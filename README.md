@@ -1,5 +1,10 @@
 # Holy Extensions
 
+[![npm version](https://img.shields.io/npm/v/holy-extensions.svg)](https://www.npmjs.com/package/holy-extensions)
+[![npm downloads](https://img.shields.io/npm/dm/holy-extensions.svg)](https://www.npmjs.com/package/holy-extensions)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/holy-extensions)](https://bundlephobia.com/package/holy-extensions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Библиотека модулей для расширения функциональности веб-сайтов.
 
 ## Быстрый старт для конструкторов сайтов
@@ -8,7 +13,7 @@
 
 ```html
 <!-- Минимальный пример установки -->
-<link rel="stylesheet" href="https://unpkg.com/holy-extensions/dist/holy-extensions.min.css">
+<link rel="stylesheet" href="https://unpkg.com/holy-extensions/dist/holy-extensions.css" />
 <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
 <script src="https://unpkg.com/holy-extensions/dist/holy-extensions.min.js"></script>
 <script>
@@ -18,8 +23,8 @@
     backgroundColor: '#FFFFFF',
     textColor: '#555555',
     accentColor: '#d83d78',
-    fontFamily: 'Arial'
-  });
+    fontFamily: 'Arial',
+  })
 </script>
 ```
 
@@ -54,7 +59,7 @@ holyxeyModal.set({
   fontFamily: 'Jost',
   policyLink: '/policy',
   policyOpenText: 'Открыть документ',
-  policyAcceptText: 'Принять'
+  policyAcceptText: 'Принять',
 })
 
 // Или как глобальный объект
@@ -65,17 +70,17 @@ window.holyxeyModal.set({
 
 #### Опции
 
-| Параметр | Тип | По умолчанию | Описание |
-|----------|-----|--------------|-----------|
-| title | string | 'Мы используем cookie' | Заголовок модального окна |
-| description | string | 'Продолжая пользоваться сайтом...' | Описание в модальном окне |
-| backgroundColor | string | '#FFFFFF' | Цвет фона |
-| textColor | string | '#555555' | Цвет текста |
-| accentColor | string | '#d83d78' | Цвет акцента |
-| fontFamily | string | 'Jost' | Шрифт |
-| policyLink | string | '/policy' | Ссылка на политику конфиденциальности |
-| policyOpenText | string | 'Открыть документ' | Текст кнопки открытия политики |
-| policyAcceptText | string | 'Принять' | Текст кнопки принятия |
+| Параметр         | Тип    | По умолчанию                       | Описание                              |
+| ---------------- | ------ | ---------------------------------- | ------------------------------------- |
+| title            | string | 'Мы используем cookie'             | Заголовок модального окна             |
+| description      | string | 'Продолжая пользоваться сайтом...' | Описание в модальном окне             |
+| backgroundColor  | string | '#FFFFFF'                          | Цвет фона                             |
+| textColor        | string | '#555555'                          | Цвет текста                           |
+| accentColor      | string | '#d83d78'                          | Цвет акцента                          |
+| fontFamily       | string | 'Jost'                             | Шрифт                                 |
+| policyLink       | string | '/policy'                          | Ссылка на политику конфиденциальности |
+| policyOpenText   | string | 'Открыть документ'                 | Текст кнопки открытия политики        |
+| policyAcceptText | string | 'Принять'                          | Текст кнопки принятия                 |
 
 ## Разработка
 
