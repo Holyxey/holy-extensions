@@ -51,8 +51,7 @@
         <a
           :href="referrerLink"
           target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Веб разработка от Holyxey в сотрудничестве с AdsTarget"
+          title="Веб разработка от Holyxey в сотрудничестве с AdsTarget"
         >
           <img
             loading="lazy"
@@ -76,6 +75,7 @@
 </template>
 
 <!-- Main -->
+
 <style scoped>
   #cookieModalWrapper,
   #cookieModalWrapper * {
@@ -168,6 +168,7 @@
 </style>
 
 <!-- Media -->
+
 <style scoped>
   @media (max-width: 460px) {
     #cookieModalContentWrapper {
