@@ -6,14 +6,13 @@ import CookiesModal from './CookiesModal.vue'
 
 const defaultCookieModalOptions: CookiesModalOptions = {
   title: 'Мы используем cookie',
-  description: 'Продолжая пользоваться сайтом, вы соглашаетесь с Политикой конфиденциальности',
+  description: 'Продолжая использовать сайт, вы соглашаетесь с Политикой конфиденциальности',
   backgroundColor: '#FFFFFF',
   textColor: '#555555',
   accentColor: '#d83d78',
-  fontFamily: 'Jost',
-  policyAcceptText: 'Принять',
+  fontFamily: 'Tahoma',
   policyLink: '/policy',
-  policyOpenText: 'Открыть документ',
+  policyOpenText: 'Ознакомиться с политикой',
 }
 
 export const holyxeyModal = {

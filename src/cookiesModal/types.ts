@@ -4,7 +4,6 @@ export type CookiesModalOptions = {
 
   policyLink: string
   policyOpenText: string
-  policyAcceptText: string
 
   backgroundColor: string
   textColor: string
