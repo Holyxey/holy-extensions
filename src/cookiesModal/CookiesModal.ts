@@ -10,8 +10,7 @@ const defaultCookieModalOptions: CookiesModalOptions = {
   backgroundColor: '#FFFFFF',
   textColor: '#555555',
   accentColor: '#d83d78',
-  fontFamily: 'Jost',
-  policyAcceptText: 'Принять',
+  fontFamily: 'Tahoma',
   policyLink: '/policy',
   policyOpenText: 'Открыть документ',
 }

@@ -59,7 +59,7 @@
             id="cookieIcon"
             height="25"
             width="25"
-            src="https://static.tildacdn.com/tild3564-3965-4434-b434-353830386163/radix-iconscookie.svg"
+            :src="`https://api.iconify.design/hugeicons:cookie.svg?color=%23${props.accentColor.replace('#', '')}`"
             alt="cookie icon"
             role="none"
           />
@@ -111,7 +111,7 @@
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
   }
   #cookieModalHeader {
     display: flex;
