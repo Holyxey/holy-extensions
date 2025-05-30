@@ -58,7 +58,7 @@
             id="cookieIcon"
             height="25"
             width="25"
-            :src="`https://api.iconify.design/hugeicons:cookie.svg?color=%23${props.accentColor.replace('#', '')}`"
+            :src="`https://api.iconify.design/hugeicons:cookie.svg?color=%23${props.textColor.replace('#', '')}`"
             alt="cookie icon"
             role="none"
           />
