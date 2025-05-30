@@ -125,7 +125,6 @@
     margin-left: 0.5rem;
     right: 0.5rem;
     width: fit-content;
-    max-width: 500px;
 
     opacity: 0;
 
@@ -171,7 +170,6 @@
     flex-direction: column;
     gap: 1rem;
     font-size: 1rem;
-    font-weight: 350;
   }
   #cookiePolicyLink {
     display: flex;
@@ -209,9 +207,6 @@
 
 <style scoped>
   @media (max-width: 460px) {
-    #cookieModalContentWrapper {
-      padding: 0.5rem;
-    }
     #cookieModalWrapper {
       text-align: center;
       bottom: 0.25rem;
@@ -223,10 +218,12 @@
       border-radius: 1rem;
       flex-direction: column;
       padding: 0.5rem;
-      box-shadow: unset;
     }
     #cookieModalHeader {
       font-size: 1.2rem;
+    }
+    #cookieModalContentWrapper {
+      padding: 0.5rem;
     }
     #cookieModalContent {
       font-size: 1rem;
