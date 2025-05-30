@@ -2,6 +2,8 @@
   import { useTemplateRef, computed } from 'vue'
   import type { CookiesModalOptions } from './types'
 
+  const referrerLink = `https://adstarget.ru/web-development?utm_source=holyxey.com&utm_medium=cookies_modal&utm_campaign=${location.host}`
+
   const props = defineProps<CookiesModalOptions>()
 
   const isCookieAccepted = localStorage.getItem('isCookieAccepted')
@@ -25,12 +27,6 @@
       cookieModalWrapper.value.classList.toggle('hideToBottom')
     }
   }
-  function openReferrer() {
-    window.open(
-      'https://adstarget.ru/web-development?utm_source=holyxey.com&utm_medium=cookies_modal&utm_campaign=holyxeyLibs',
-      '_blank',
-    )
-  }
 </script>
 
 <template>
@@ -52,16 +48,22 @@
     />
     <div id="cookieModalContentWrapper">
       <div id="cookieModalHeader">
-        <img
-          @click="openReferrer"
-          loading="lazy"
-          id="cookieIcon"
-          height="25"
-          width="25"
-          src="https://static.tildacdn.com/tild3564-3965-4434-b434-353830386163/radix-iconscookie.svg"
-          alt="cookie icon"
-          role="none"
-        />
+        <a
+          :href="referrerLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Веб разработка от Holyxey в сотрудничестве с AdsTarget"
+        >
+          <img
+            loading="lazy"
+            id="cookieIcon"
+            height="25"
+            width="25"
+            src="https://static.tildacdn.com/tild3564-3965-4434-b434-353830386163/radix-iconscookie.svg"
+            alt="cookie icon"
+            role="none"
+          />
+        </a>
         <p>{{ props.title }}</p>
       </div>
       <div id="cookieModalContent">
@@ -143,7 +145,7 @@
   }
   button#cookieConfirm {
     padding: 1rem;
-    background-color: var(--modal-text);
+    background-color: var(--modal-accent);
     color: var(--modal-background);
     font-size: 1.5rem;
     cursor: pointer;
@@ -153,7 +155,7 @@
 
     &:hover {
       background-color: var(--modal-background);
-      border: 2px solid var(--modal-text);
+      border: 2px solid var(--modal-accent);
       color: var(--modal-text);
       border-radius: 1.5rem;
       transform: translateX(-10%);

@@ -13,7 +13,7 @@
 
 ```html
 <!-- Минимальный пример установки -->
-<link rel="stylesheet" href="https://unpkg.com/holy-extensions/dist/holy-extensions.css" />
+<link rel="stylesheet" href="https://unpkg.com/holy-extensions/dist/assets/holy-extensions.css" />
 <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
 <script src="https://unpkg.com/holy-extensions/dist/holy-extensions.min.js"></script>
 <script>
