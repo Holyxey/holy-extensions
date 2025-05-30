@@ -5,7 +5,7 @@
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/holy-extensions)](https://bundlephobia.com/package/holy-extensions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Библиотека модулей для расширения функциональности веб-сайтов.
+Библиотека модулей для расширения функциональности веб-сайтов. [История изменений](CHANGELOG.md)
 
 ## Быстрый старт для конструкторов сайтов
 
